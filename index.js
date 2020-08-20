@@ -39,3 +39,18 @@ let questions = [
         correct  :  "C"
     },
 ];
+
+
+
+// Let create some Variables
+
+// To get the last question!
+const lastQuestion   = question.length -1;
+// We can keep track running question!
+let runningQuestion  = 0;
+
+// we need a render function for our questions!
+function renderQuestion(){
+    let q = questions[runningQuestion];
+    question.innerText = "<p>"+ q.question +"</p>";
+}

@@ -121,7 +121,23 @@ function answerIsCorrect(){
     document.getElementById(runningQuestion).style.backgroundColor = "green"
 }
 
-// anser is wrong
+// anser is wrong! 
 function answerIsWrong(){
     document.getElementById(runningQuestion).style.backgroundColor = "red"
+}
+ 
+// Score render!
+function scoreRender() {
+    scoreDiv.style.display = "block"
+    
+    // calculate the amount of question percent answered by user!
+    const scorePerCent = Math.round( 100 * score/questions.length)
+    
+    // choose the photo based on the scorePerCent
+    let img = (scorePerCent >= 80) ? "./img/5.png" :
+              (scorePerCent >= 60) ? "./img/4.png" :
+              (scorePerCent >= 40) ? "./img/3.png" :
+              (scorePerCent >= 20) ? "./img/2.png" : "./img/1.png";
+              scoreDiv.innerHTML = "<img src=" + imgsrc + ">"
+              scoreDiv.innerHTML = "<p>" + scorePerCent + "%</p>"
 }

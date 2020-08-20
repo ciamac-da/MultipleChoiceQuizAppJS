@@ -21,6 +21,21 @@ let questions = [
         choiceB  : "Wrong",
         choiceC  : "Wrong",
         correct  :  "A"
-
-    }
+    },
+    {
+        question : "What does CSS stand for?",
+        imgsrc   : "img/css.png",
+        choiceA  : "Wrong",
+        choiceB  : "Correct",
+        choiceC  : "Wrong",
+        correct  :  "B"
+    },
+    {
+        question : "What does JAVASCRIPT stand for?",
+        imgsrc   : "img/js.png",
+        choiceA  : "Wrong",
+        choiceB  : "Wrong",
+        choiceC  : "Correct",
+        correct  :  "C"
+    },
 ];

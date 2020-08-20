@@ -79,3 +79,10 @@ let count;
 const questionTime = 10; // 10s
 const gaugeWidth   = 150; //150px
 const gaugeUnit    = gaugeWidth / questionTime;
+
+function renderCounter(){
+    if(count <= questionTime){
+        counter.innerHTML = count;
+        timeGauge.style.width = count * gaugeUnit
+    }
+}

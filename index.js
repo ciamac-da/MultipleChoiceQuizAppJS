@@ -103,14 +103,16 @@ function renderCounter(){
 }
 
 // CheckAnswer
-function CheckAnswer(answer){
-    if(answer == question[runningQuestion].correct){
+function checkAnswer(answer){
+    if(answer == questions[runningQuestion].correct){
         // answer is correct
         score++
         // change progress color to green
+        answerIsCorrect();
     }else{
         // answer is incorrect
         // change progress color to red
+        answerIsWrong();
     }
 }
 

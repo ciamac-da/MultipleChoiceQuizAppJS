@@ -98,6 +98,16 @@ function renderCounter(){
         "px";
         count++
     }else{
+        count = 0;
+    }
+}
 
+// CheckAnswer
+function CheckAnswer(answer){
+    if(answer == question[runningQuestion].correct){
+        // answer is correct
+        score++
+    }else{
+        // answer is incorrect
     }
 }

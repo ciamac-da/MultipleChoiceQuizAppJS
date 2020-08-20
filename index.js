@@ -54,6 +54,7 @@ const questionTime = 10; // 10s
 const gaugeWidth   = 150; //150px
 const gaugeUnit    = gaugeWidth / questionTime;
 let TIMER;
+let score          = 0;
 
 // we need a render function for our questions!
 function renderQuestion(){
@@ -66,12 +67,19 @@ function renderQuestion(){
     choiceC.innerHTML  = q.choiceC;
 }
 
-start.style.display = "none";
-renderQuestion();
-quiz.style.display  = "block";
-renderProgress();
-renderCounter();
-TIMER = setInterval(renderCounter,1000); // 1000ms = 1sec
+start.addEventListener("click", startQuiz)
+
+// Startquiz function
+function startQuiz() {
+    start.style.display = "none";
+    renderQuestion();
+    quiz.style.display  = "block";
+    renderProgress();
+    renderCounter();
+    TIMER = setInterval(renderCounter,1000); // 1000ms = 1sec
+}
+
+
 // Render progress
 function renderProgress(){
     for( let qIndex = 0; qIndex <= lastQuestion;
@@ -86,7 +94,8 @@ function renderProgress(){
 function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
-        timeGauge.style.width = count * gaugeUnit
+        timeGauge.style.width = count * gaugeUnit +
+        "px";
         count++
     }else{
 

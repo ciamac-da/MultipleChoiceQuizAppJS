@@ -7,6 +7,22 @@
     <title>Multiple Choice Quiz App</title>
 </head>
 <body>
-    
+
+    <div id="container">
+        <div id="start">Start the Quiz buddy!</div>
+        <div id="quiz">
+            <div id="question"></div>
+            <div id="qImg"></div>
+            <div id="choices">
+            <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+            <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+            <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+            </div>
+            <div id="timer"></div>
+            <div id="progress"></div>
+        </div>
+        <div id="score"></div>
+    </div>
+    <script src="./index.js"></script>
 </body>
 </html>

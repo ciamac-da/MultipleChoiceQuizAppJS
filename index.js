@@ -52,5 +52,10 @@ let runningQuestion  = 0;
 // we need a render function for our questions!
 function renderQuestion(){
     let q = questions[runningQuestion];
+
     question.innerText = "<p>"+ q.question +"</p>";
+    qImg.innerText     = "<img src="+ q.qImg + ">";
+    choiceA.innerText  = q.choiceA;
+    choiceB.innerText  = q.choiceB;
+    choiceC.innerText  = q.choiceC;
 }

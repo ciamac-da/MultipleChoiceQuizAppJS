@@ -48,6 +48,12 @@ let questions = [
 const lastQuestion   = question.length -1;
 // We can keep track running question!
 let runningQuestion  = 0;
+// Counter render
+let count          = 0;
+const questionTime = 10; // 10s
+const gaugeWidth   = 150; //150px
+const gaugeUnit    = gaugeWidth / questionTime;
+let TIMER;
 
 // we need a render function for our questions!
 function renderQuestion(){
@@ -64,7 +70,8 @@ start.style.display = "none";
 renderQuestion();
 quiz.style.display  = "block";
 renderProgress();
-
+renderCounter();
+TIMER = setInterval(renderCounter,1000); // 1000ms = 1sec
 // Render progress
 function renderProgress(){
     for( let qIndex = 0; qIndex <= lastQuestion;
@@ -74,15 +81,14 @@ function renderProgress(){
         }
 }
 
-// Counter render
-let count;
-const questionTime = 10; // 10s
-const gaugeWidth   = 150; //150px
-const gaugeUnit    = gaugeWidth / questionTime;
+
 
 function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
         timeGauge.style.width = count * gaugeUnit
+        count++
+    }else{
+
     }
 }

@@ -53,11 +53,11 @@ let runningQuestion  = 0;
 function renderQuestion(){
     let q = questions[runningQuestion];
 
-    question.innerText = "<p>"+ q.question +"</p>";
-    qImg.innerText     = "<img src="+ q.qImg + ">";
-    choiceA.innerText  = q.choiceA;
-    choiceB.innerText  = q.choiceB;
-    choiceC.innerText  = q.choiceC;
+    question.innerHTML = "<p>"+ q.question +"</p>";
+    qImg.innerHTML     = "<img src="+ q.imgsrc + ">";
+    choiceA.innerHTML  = q.choiceA;
+    choiceB.innerHTML  = q.choiceB;
+    choiceC.innerHTML  = q.choiceC;
 }
 
 start.style.display = "none";

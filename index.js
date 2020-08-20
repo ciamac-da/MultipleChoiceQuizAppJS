@@ -63,6 +63,7 @@ function renderQuestion(){
 start.style.display = "none";
 renderQuestion();
 quiz.style.display  = "block";
+renderProgress();
 
 // Render progress
 function renderProgress(){
@@ -72,3 +73,9 @@ function renderProgress(){
             qIndex +"></div>";
         }
 }
+
+// Counter render
+let count;
+const questionTime = 10; // 10s
+const gaugeWidth   = 150; //150px
+const gaugeUnit    = gaugeWidth / questionTime;

@@ -107,7 +107,19 @@ function CheckAnswer(answer){
     if(answer == question[runningQuestion].correct){
         // answer is correct
         score++
+        // change progress color to green
     }else{
         // answer is incorrect
+        // change progress color to red
     }
+}
+
+// anser is correct
+function answerIsCorrect(){
+    document.getElementById(runningQuestion).style.backgroundColor = "green"
+}
+
+// anser is wrong
+function answerIsWrong(){
+    document.getElementById(runningQuestion).style.backgroundColor = "red"
 }

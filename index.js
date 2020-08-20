@@ -59,3 +59,7 @@ function renderQuestion(){
     choiceB.innerText  = q.choiceB;
     choiceC.innerText  = q.choiceC;
 }
+
+start.style.display = "none";
+renderQuestion();
+quiz.style.display  = "block";

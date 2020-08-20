@@ -1,3 +1,7 @@
 #quiz{
     display: none;
 }
+
+#score{
+    display: none;
+}

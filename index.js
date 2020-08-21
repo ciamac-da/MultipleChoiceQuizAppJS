@@ -33,26 +33,26 @@ let questions = [
     },{
         question : "Which HTML attribute is used to define inline styles?",
         imgSrc : "img/html.png",
-        choiceA : "Style",
-        choiceB : "Div",
-        choiceC : "Font",
-        choiceD : "Styles",
+        choiceA : "style",
+        choiceB : "div",
+        choiceC : "font",
+        choiceD : "styles",
         correct : "A"
     },{
         question : "Which of the following method is used to get meta information of a resource?",
         imgSrc : "img/html.png",
-        choiceA : "Top",
-        choiceB : "Get",
-        choiceC : "Head",
-        choiceD : "Grab",
+        choiceA : "top",
+        choiceB : "get",
+        choiceC : "head",
+        choiceD : "grab",
         correct : "C"
     },{
         question : "Choose the correct HTML tag for the smallest heading",
         imgSrc : "img/html.png",
         choiceA : "Small heading",
-        choiceB : "H6",
+        choiceB : "h6",
         choiceC : "Heading small",
-        choiceD : "H1",
+        choiceD : "h1",
         correct : "B"
     },{
         question : "Where is the correct place to insert a Javascript Code in HTML?",
@@ -63,30 +63,63 @@ let questions = [
         choiceD : "Body section",
         correct : "A"
     },{
-        question : "The attribute of form tag is :",
+        question : "The attribute of form tag is:",
         imgSrc : "img/html.png",
-        choiceA : "Method",
+        choiceA : "method",
         choiceB : "Both of A and D",
         choiceC : "None of these",
-        choiceD : "Action",
+        choiceD : "action",
         correct : "B"
     },{
-        question : "The attribute of form tag is :",
+        question : "Choose the correct HTML element to define emphasized text",
         imgSrc : "img/html.png",
-        choiceA : "Method",
-        choiceB : "Both of A and D",
-        choiceC : "None of these",
-        choiceD : "Action",
-        correct : "B"
+        choiceA : "italic",
+        choiceB : "i",
+        choiceC : "em",
+        choiceD : "strong",
+        correct : "C"
     },{
+        question : "What is the correct HTML element for inserting a line break?",
+        imgSrc : "img/html.png",
+        choiceA : "br",
+        choiceB : "lb",
+        choiceC : "break",
+        choiceD : "hr",
+        correct : "A"
+    },{
+        question : "HTML status code is:",
+        imgSrc : "img/html.png",
+        choiceA : "Three-digit",
+        choiceB : "One-digit",
+        choiceC : "Four-digit",
+        choiceD : "Two-digit",
+        correct : "A"
+    },{ // css 1
         question : "What does CSS stand for?",
         imgSrc : "img/css.png",
-        choiceA : "Wrong",
-        choiceB : "Correct",
-        choiceC : "Wrong",
-        choiceD : "Wrong",
+        choiceA : "Computer Style Sheets",
+        choiceB : "Creative Style Sheets",
+        choiceC : "Cascading Style Sheets",
+        choiceD : "Colorful Style Sheets",
+        correct : "C"
+    },{ // css 2
+        question : "How do you insert a comment in a CSS file?",
+        imgSrc : "img/css.png",
+        choiceA : "// comment",
+        choiceB : "// comment //",
+        choiceC : "' comment",
+        choiceD : "/* comment*/",
+        correct : "D"
+    },{ //css 3
+        question : "Which property is used to change the background color??",
+        imgSrc : "img/css.png",
+        choiceA : "bgcolor",
+        choiceB : "background-color",
+        choiceC : "color",
+        choiceD : "Background-color",
         correct : "B"
-    },{
+    },
+    {
         question : "Which of the following tag is used for javascript?",
         imgSrc : "img/js.png",
         choiceA : "Footer",

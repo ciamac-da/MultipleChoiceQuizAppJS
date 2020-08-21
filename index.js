@@ -63,6 +63,22 @@ let questions = [
         choiceD : "Body section",
         correct : "A"
     },{
+        question : "The attribute of form tag is :",
+        imgSrc : "img/html.png",
+        choiceA : "Method",
+        choiceB : "Both of A and D",
+        choiceC : "None of these",
+        choiceD : "Action",
+        correct : "B"
+    },{
+        question : "The attribute of form tag is :",
+        imgSrc : "img/html.png",
+        choiceA : "Method",
+        choiceB : "Both of A and D",
+        choiceC : "None of these",
+        choiceD : "Action",
+        correct : "B"
+    },{
         question : "What does CSS stand for?",
         imgSrc : "img/css.png",
         choiceA : "Wrong",

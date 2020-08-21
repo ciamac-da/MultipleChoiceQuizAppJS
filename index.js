@@ -23,6 +23,14 @@ let questions = [
         choiceD : "Network protocol",
         correct : "A"
     },{
+        question : "Fundamental HTML Block is known as?",
+        imgSrc : "img/html.png",
+        choiceA : "HTML Element",
+        choiceB : "HTML Attribute",
+        choiceC : "HTML Body",
+        choiceD : "HTML Tag",
+        correct : "D"
+    },{
         question : "What does CSS stand for?",
         imgSrc : "img/css.png",
         choiceA : "Wrong",

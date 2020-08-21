@@ -14,11 +14,11 @@ const scoreDiv = document.getElementById("scoreContainer");
 // create our questions
 let questions = [
     {
-        question : "What does HTML stand for?",
+        question : "What type of language HTML is?",
         imgSrc : "img/html.png",
-        choiceA : "Correct",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
+        choiceA : "Markup language",
+        choiceB : "Scripting language",
+        choiceC : "Programming language",
         correct : "A"
     },{
         question : "What does CSS stand for?",
@@ -28,11 +28,11 @@ let questions = [
         choiceC : "Wrong",
         correct : "B"
     },{
-        question : "What does JS stand for?",
+        question : "Which of the following tag is used for javascript?",
         imgSrc : "img/js.png",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
+        choiceA : "Footer",
+        choiceB : "Article",
+        choiceC : "Canvas",
         correct : "C"
     }
 ];

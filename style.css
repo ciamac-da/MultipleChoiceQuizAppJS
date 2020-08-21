@@ -65,6 +65,7 @@ body{
 }
 
 #choices{
+    display: flex;
     width : 480px;
     position: absolute;
     right : 0;

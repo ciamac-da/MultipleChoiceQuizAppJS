@@ -6,6 +6,7 @@ const qImg = document.getElementById("qImg");
 const choiceA = document.getElementById("A");
 const choiceB = document.getElementById("B");
 const choiceC = document.getElementById("C");
+const choiceD = document.getElementById("D");
 const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
@@ -19,6 +20,7 @@ let questions = [
         choiceA : "Markup language",
         choiceB : "Scripting language",
         choiceC : "Programming language",
+        choiceD : "Network protocol",
         correct : "A"
     },{
         question : "What does CSS stand for?",
@@ -26,6 +28,7 @@ let questions = [
         choiceA : "Wrong",
         choiceB : "Correct",
         choiceC : "Wrong",
+        choiceD : "Wrong",
         correct : "B"
     },{
         question : "Which of the following tag is used for javascript?",
@@ -33,6 +36,7 @@ let questions = [
         choiceA : "Footer",
         choiceB : "Article",
         choiceC : "Canvas",
+        choiceD : "Body",
         correct : "C"
     }
 ];
@@ -57,6 +61,7 @@ function renderQuestion(){
     choiceA.innerHTML = q.choiceA;
     choiceB.innerHTML = q.choiceB;
     choiceC.innerHTML = q.choiceC;
+    choiceD.innerHTML = q.choiceD;
 }
 
 start.addEventListener("click",startQuiz);

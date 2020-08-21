@@ -31,6 +31,38 @@ let questions = [
         choiceD : "HTML Tag",
         correct : "D"
     },{
+        question : "Which HTML attribute is used to define inline styles?",
+        imgSrc : "img/html.png",
+        choiceA : "Style",
+        choiceB : "Div",
+        choiceC : "Font",
+        choiceD : "Styles",
+        correct : "A"
+    },{
+        question : "Which of the following method is used to get meta information of a resource?",
+        imgSrc : "img/html.png",
+        choiceA : "Top",
+        choiceB : "Get",
+        choiceC : "Head",
+        choiceD : "Grab",
+        correct : "C"
+    },{
+        question : "Choose the correct HTML tag for the smallest heading",
+        imgSrc : "img/html.png",
+        choiceA : "Small heading",
+        choiceB : "H6",
+        choiceC : "Heading small",
+        choiceD : "H1",
+        correct : "B"
+    },{
+        question : "Where is the correct place to insert a Javascript Code in HTML?",
+        imgSrc : "img/html.png",
+        choiceA : "Both of C and D",
+        choiceB : "None of these",
+        choiceC : "Head section",
+        choiceD : "Body section",
+        correct : "A"
+    },{
         question : "What does CSS stand for?",
         imgSrc : "img/css.png",
         choiceA : "Wrong",

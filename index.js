@@ -158,6 +158,22 @@ let questions = [
         choiceC : "demo",
         choiceD : "*demo",
         correct : "B"
+    },{ //css 9
+        question : "How do you select elements with class name 'test'?",
+        imgSrc   : "img/css.png",
+        choiceA  : "test",
+        choiceB  : ".test",
+        choiceC  : "#test",
+        choiceD  : "*test",
+        correct  : "B"
+    },{ //css 10
+        question : "How do you select all <p> elements where the parent is a <div>element?",
+        imgSrc   : "img/css.png",
+        choiceA  : "div + p",
+        choiceB  : "div > p",
+        choiceC  : "div p",
+        choiceD  : "div.p",
+        correct  : "B"
     },{
         question : "Which of the following tag is used for javascript?",
         imgSrc : "img/js.png",

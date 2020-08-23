@@ -20,22 +20,25 @@ body{
     position: relative;
 }
 #start{
-    font-size: 1.5em;
+    font-size: 3em;
     font-weight: bolder;
     word-break: break-all;
-    width:100px;
-    height:150px;
-    border : 2px solid lightgrey;
+    width:inherit;
+    height:430px;
+    border : 20px solid lightgrey;
     text-align: center;
     cursor: pointer;
     position: absolute;
-    left:300px;
-    top:50px;
     color : lightgrey;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    border-radius: 5px;
 }
 #start:hover{
-    border: 3px solid lightseagreen;
-    color : lightseagreen;
+    border: 5px solid gray;
+    color : gray;
 }
 
 #qImg{
@@ -137,11 +140,11 @@ body{
 #scoreContainer{
     margin : 20px auto;
     background-color: white;
-    opacity: 0.8;
+    opacity: 0.9;
     height: 390px;
     width : 670px;
     border-radius: 5px;
-    box-shadow: 0px 5px 15px 0px;
+    box-shadow: 10px 10px 10px 0px;
     position: relative;
     display: none;
 }

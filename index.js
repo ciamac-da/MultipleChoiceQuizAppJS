@@ -185,10 +185,10 @@ let questions = [
     },{ // javascript 2
         question : "Inside which HTML element do we put the JavaScript?",
         imgSrc : "img/js.png",
-        choiceA : "<script>",
-        choiceB : "<js>",
-        choiceC : "<scripting>",
-        choiceD : "<javascript>",
+        choiceA : "&#60script&#62;",
+        choiceB : "&#60;js&#62;",
+        choiceC : "&#60;scripting&#62;",
+        choiceD : "&#60;javascript&#62;",
         correct : "A"
     },{ // javascript 3
         question : "How do you create a function in JavaScript?",
@@ -227,7 +227,7 @@ let questions = [
         imgSrc : "img/js.png",
         choiceA : "/comment",
         choiceB : "'comment",
-        choiceC : "<!--comment-->",
+        choiceC : "&#60;!--comment--&#62;",
         choiceD : "//comment",
         correct : "D"
     },{ // javascript 8
@@ -238,6 +238,22 @@ let questions = [
         choiceC : "round(7.25)",
         choiceD : "rnd(7.25)",
         correct : "A"
+    },{ // javascript 9
+        question : "How do you find the number with the highest value of x and y?",
+        imgSrc : "img/js.png",
+        choiceA : "ceil(x,y)",
+        choiceB : "Math.ceil(x,y)",
+        choiceC : "Math.Max(x,y)",
+        choiceD : "top(x,y)",
+        correct : "C"
+    },{ // javascript 10
+        question : "Which operator is used to assign a value to a variable?",
+        imgSrc : "img/js.png",
+        choiceA : "-",
+        choiceB : "*",
+        choiceC : "x",
+        choiceD : "=",
+        correct : "D"
     }
 ];
 // create some variables

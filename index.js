@@ -353,8 +353,13 @@ function answerIsWrong(){
 
 // score render
 function scoreRender(){
-    scoreDiv.style.display = "block";
-    
+    scoreDiv.style.display = "flex";
+    scoreDiv.style.justifyContent = "center";
+    scoreDiv.style.textAlign = "center";
+    scoreDiv.style.fontSize = "2em";
+    scoreDiv.style.alignItems = "center";
+
+
     // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length);
     
@@ -365,21 +370,30 @@ function scoreRender(){
               (scorePerCent >= 20) ? "img/2.png" :
               "img/1.png";
     
-    if( img === "img/5.png"){
-        scoreDiv.innerHTML += "<p>Awesome!</p>"
-    }
-    if( img === "img/4.png"){
-        scoreDiv.innerHTML += "<p>Bravo!</p>"
-    }
-    if( img === "img/3.png"){
-        scoreDiv.innerHTML += "<p>hmmm Not Bad!</p>"
-    }
-    if( img === "img/2.png"){
-        scoreDiv.innerHTML += "<p>Study more and come back again buddy!</p>"
-    }
-    if( img === "img/1.png"){
-        scoreDiv.innerHTML += "<p>Disaster!!!</p>"
-    }
+    let PerCentMsg = (scorePerCent >= 80) ? "<p>Awesome!</p>" :
+                     (scorePerCent >= 60) ? "<p>Bravo!</p>" :
+                     (scorePerCent >= 40) ? "<p>Hmmm Not Bad!</p>" :
+                     (scorePerCent >= 20) ? "<p>Study more buddy!</p>" :
+                     "<p>Disaster!!!</p>";
+
+
+    //if( img === "img/5.png"){
+    //    scoreDiv.innerHTML += "<p>Awesome!</p>"
+    //}
+    //if( img === "img/4.png"){
+    //    scoreDiv.innerHTML += "<p>Bravo!</p>"
+    //}
+    //if( img === "img/3.png"){
+    //    scoreDiv.innerHTML += "<p>hmmm Not Bad!</p>"
+    //}
+    //if( img === "img/2.png"){
+    //    scoreDiv.innerHTML += "<p>Study more and come back again buddy!</p>"
+    //}
+    //if( img === "img/1.png"){
+    //    scoreDiv.innerHTML += "<p>Disaster!!!</p>"
+    //}
+
+
     scoreDiv.innerHTML = "<img src="+ img +">";
-    scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
+    scoreDiv.innerHTML += "<p class='newP'>"+ PerCentMsg + scorePerCent +"%</p>";
 }

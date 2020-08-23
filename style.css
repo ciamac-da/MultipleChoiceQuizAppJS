@@ -138,11 +138,11 @@ body{
     margin-right : 5px;
 }
 #scoreContainer{
-    margin : 20px auto;
+    margin : auto;
     background-color: white;
     opacity: 0.9;
-    height: 390px;
-    width : 670px;
+    height: 430px;
+    width : 700px;
     border-radius: 5px;
     box-shadow: 10px 10px 10px 0px;
     position: relative;
@@ -151,16 +151,13 @@ body{
 #scoreContainer img{
     position: absolute;
     top:117px;
-    left:325px;
 }
 #scoreContainer p{
     position: absolute;
-    display: block;
-    width : 59px;
+    display: flex;
     height :59px;
-    top:180px;
-    left:325px;
-    font-size: 1.5em;
+    top:200px;
+    font-size: 1.7em;
     font-weight: bold;
     text-align: center;
 }
@@ -175,4 +172,8 @@ body{
 }
 #D{
     margin: 3px;
+}
+#text{
+    display: flex;
+    justify-content: center;
 }

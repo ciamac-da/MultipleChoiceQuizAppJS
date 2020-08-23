@@ -174,7 +174,7 @@ let questions = [
         choiceC  : "div p",
         choiceD  : "div.p",
         correct  : "B"
-    },{
+    },{ // javascript 1
         question : "Which of the following tag is used for javascript?",
         imgSrc : "img/js.png",
         choiceA : "Footer",
@@ -182,11 +182,65 @@ let questions = [
         choiceC : "Canvas",
         choiceD : "Body",
         correct : "C"
+    },{ // javascript 2
+        question : "Inside which HTML element do we put the JavaScript?",
+        imgSrc : "img/js.png",
+        choiceA : "<script>",
+        choiceB : "<js>",
+        choiceC : "<scripting>",
+        choiceD : "<javascript>",
+        correct : "A"
+    },{ // javascript 3
+        question : "How do you create a function in JavaScript?",
+        imgSrc : "img/js.png",
+        choiceA : "function;myFunction()",
+        choiceB : "function=myFunction()",
+        choiceC : "function:myFunction()",
+        choiceD : "function myFunction()",
+        correct : "D"
+    },{ // javascript 4
+        question : "How to write an IF statement in JavaScript?",
+        imgSrc : "img/js.png",
+        choiceA : "if i==5 then",
+        choiceB : "if i=5",
+        choiceC : "if(i==5)",
+        choiceD : "if i=5 then",
+        correct : "C"
+    },{ // javascript 5
+        question : "How does a WHILE loop start?",
+        imgSrc : "img/js.png",
+        choiceA : "while(i<=10)",
+        choiceB : "while(i<=10;i++)",
+        choiceC : "while i= 1 to 10",
+        choiceD : "while(i= 1 to 10)",
+        correct : "A"
+    },{ // javascript 6
+        question : "How does a FOR loop start?",
+        imgSrc : "img/js.png",
+        choiceA : "for(i<=5;i++)",
+        choiceB : "for(i=0;i<5;i++)",
+        choiceC : "for i = 1 to 5",
+        choiceD : "for(i=0;i<=5)",
+        correct : "B"
+    },{ // javascript 7
+        question : "How can you add a comment in a JavaScript?",
+        imgSrc : "img/js.png",
+        choiceA : "/comment",
+        choiceB : "'comment",
+        choiceC : "<!--comment-->",
+        choiceD : "//comment",
+        correct : "D"
+    },{ // javascript 8
+        question : "How do you round the number 7.25, to the nearest integer?",
+        imgSrc : "img/js.png",
+        choiceA : "Math.round(7.25)",
+        choiceB : "Math.rnd(7.25)",
+        choiceC : "round(7.25)",
+        choiceD : "rnd(7.25)",
+        correct : "A"
     }
 ];
-
 // create some variables
-
 const lastQuestion = questions.length - 1;
 let runningQuestion = 0;
 let count = 0;

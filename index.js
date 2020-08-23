@@ -151,7 +151,7 @@ let questions = [
         choiceD : "text:bold;",
         correct : "A"
     },{ //css 8
-        question : "How do you select an element with id 'demo'?",
+        question : "How do you select an element with id demo?",
         imgSrc : "img/css.png",
         choiceA : ".demo",
         choiceB : "#demo",
@@ -167,10 +167,10 @@ let questions = [
         choiceD  : "*test",
         correct  : "B"
     },{ //css 10
-        question : "How do you select all <p> elements where the parent is a <div>element?",
+        question : "How do you select all &#60;p&#62; elements where the parent is a &#60;div&#62;element?",
         imgSrc   : "img/css.png",
         choiceA  : "div + p",
-        choiceB  : "div > p",
+        choiceB  : "div &#62; p",
         choiceC  : "div p",
         choiceD  : "div.p",
         correct  : "B"

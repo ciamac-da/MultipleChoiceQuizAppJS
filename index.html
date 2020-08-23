@@ -3,34 +3,38 @@
 
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiple Choice Quiz App</title>
 </head>
 
 <body>
-
-    <div id="container">
+    <div class="card" id="container">
         <div id="start">Start the Quiz buddy!</div>
         <div id="quiz">
             <div id="question"></div>
             <div id="qImg"></div>
             <div id="choices">
-                <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-                <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-                <div class="choice" id="C" onclick="checkAnswer('C')"></div>
-                <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+                <button type="button" class="btn btn-secondary" class="choice" id="A" onclick="checkAnswer('A')"></button>
+                <button type="button" class="btn btn-secondary" class="choice" id="B" onclick="checkAnswer('B')"></button>
+                <button type="button" class="btn btn-secondary" class="choice" id="C" onclick="checkAnswer('C')"></button>
+                <button type="button" class="btn btn-secondary" class="choice" id="D" onclick="checkAnswer('D')"></button>
             </div>
             <div id="timer">
                 <div id="counter"></div>
                 <div id="btimeGauge"></div>
                 <div id="timeGauge"></div>
             </div>
-            <div id="progress"></div>
         </div>
+        <div id="progress"></div>
         <div id="scoreContainer" ></div>
     </div>
     <script src="./index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -365,6 +365,21 @@ function scoreRender(){
               (scorePerCent >= 20) ? "img/2.png" :
               "img/1.png";
     
+    if( img === "img/5.png"){
+        scoreDiv.innerHTML += "<p>Awesome!</p>"
+    }
+    if( img === "img/4.png"){
+        scoreDiv.innerHTML += "<p>Bravo!</p>"
+    }
+    if( img === "img/3.png"){
+        scoreDiv.innerHTML += "<p>hmmm Not Bad!</p>"
+    }
+    if( img === "img/2.png"){
+        scoreDiv.innerHTML += "<p>Study more and come back again buddy!</p>"
+    }
+    if( img === "img/1.png"){
+        scoreDiv.innerHTML += "<p>Disaster!!!</p>"
+    }
     scoreDiv.innerHTML = "<img src="+ img +">";
     scoreDiv.innerHTML += "<p>"+ scorePerCent +"%</p>";
 }

@@ -321,12 +321,16 @@ function renderCounter(){
     if(px > 75 && px <= 120){
         timeGauge.style.backgroundColor = "orange"
         alertMsg.innerHTML =  'Make your decision!';
-    }else if(px > 120 && px  <= 150 ){
+    }else if(px > 120 && px  < 150 ){
         timeGauge.style.backgroundColor = "red"
-        alertMsg.innerHTML =  'hurry up!';
-    }else{
+        alertMsg.innerHTML =  'Hurry up!';
+    }else if(px == 150){
+        timeGauge.style.backgroundColor = "red"
+        alertMsg.innerHTML =  'Time is Up!';
+    }
+    else{
         timeGauge.style.backgroundColor = "green"
-        alertMsg.innerHTML =  '';
+        alertMsg.innerHTML =  'You just have 10 seconds time!';
     }
 }
 

@@ -11,7 +11,7 @@ const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
-
+const alertMsg = document.getElementById("alertMsg");
 // create our questions
 let questions = [
     { // html 1
@@ -320,15 +320,15 @@ function renderCounter(){
     let px = parseInt(timeGauge.style.width)
     if(px > 75 && px <= 120){
         timeGauge.style.backgroundColor = "orange"
+        alertMsg.innerHTML =  'Make your decision!';
     }else if(px > 120 && px  <= 150 ){
         timeGauge.style.backgroundColor = "red"
+        alertMsg.innerHTML =  'hurry up!';
     }else{
         timeGauge.style.backgroundColor = "green"
+        alertMsg.innerHTML =  '';
     }
 }
-
-
-
 
 // checkAnwer
 function checkAnswer(answer){

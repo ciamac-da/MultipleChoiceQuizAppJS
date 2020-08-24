@@ -266,6 +266,7 @@ const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
 
+
 // render a question
 function renderQuestion(){
     let q = questions[runningQuestion];
@@ -317,6 +318,16 @@ function renderCounter(){
         }
     }
 }
+
+
+if(timeGauge.style.width > "75px"){
+    timeGauge.style.backgroundColor = "yellow"
+}else if(timeGauge.style.width >= "120px"){
+    timeGauge.style.backgroundColor = "red"
+}else{
+    timeGauge.style.backgroundColor = "green"
+}
+
 
 // checkAnwer
 function checkAnswer(answer){
@@ -370,6 +381,7 @@ function scoreRender(){
               (scorePerCent >= 20) ? "img/2.png" :
               "img/1.png";
     
+    // choose different texts based on the scorePerCent
     let PerCentMsg = (scorePerCent >= 80) ? "<p>Awesome!</p>" :
                      (scorePerCent >= 60) ? "<p>Bravo!</p>" :
                      (scorePerCent >= 40) ? "<p>Hmmm Not Bad!</p>" :

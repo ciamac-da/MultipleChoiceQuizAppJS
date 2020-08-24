@@ -13,7 +13,7 @@ body{
 #container{
     margin : 100px auto;
     background-color: white;
-    height: 430px;
+    height: 450px;
     width : 700px;
     border-radius: 5px;
     box-shadow: 10px 10px 10px 0px;
@@ -43,14 +43,14 @@ body{
 
 #qImg{
     width : 200px;
-    height : 215px;
+    height : 225px;
     position: absolute;
     left : 0px;
     top : 0px;
 }
 #qImg img{
     width : 200px;
-    height : 215px;
+    height : 225px;
     border-top-left-radius: 5px;
 }
 
@@ -97,7 +97,7 @@ body{
 
 #timer{
     position: absolute;
-    height : 215px;
+    height : 225px;
     width : 200px;
     bottom : 0px;
     text-align: center;
@@ -162,15 +162,19 @@ body{
 }
 #A{
     margin: 3px;
+    font-size: 20px;
 }
 #B{
     margin: 3px;
+    font-size: 20px;
 }
 #C{
     margin: 3px;
+    font-size: 20px;
 }
 #D{
     margin: 3px;
+    font-size: 20px;
 }
 #text{
     display: flex;

@@ -201,26 +201,26 @@ let questions = [
     },{ // javascript 4
         question : "How to write an IF statement in JavaScript?",
         imgSrc : "img/js.png",
-        choiceA : "if i==5 then",
-        choiceB : "if i=5",
-        choiceC : "if(i==5)",
-        choiceD : "if i=5 then",
+        choiceA : "if i == 5 then",
+        choiceB : "if i = 5",
+        choiceC : "if(i == 5)",
+        choiceD : "if i = 5 then",
         correct : "C"
     },{ // javascript 5
         question : "How does a WHILE loop start?",
         imgSrc : "img/js.png",
-        choiceA : "while(i<=10)",
-        choiceB : "while(i<=10;i++)",
-        choiceC : "while i= 1 to 10",
-        choiceD : "while(i= 1 to 10)",
+        choiceA : "while( i <= 10)",
+        choiceB : "while( i <= 10 ;i++)",
+        choiceC : "while i = 1 to 10",
+        choiceD : "while(i = 1 to 10)",
         correct : "A"
     },{ // javascript 6
         question : "How does a FOR loop start?",
         imgSrc : "img/js.png",
-        choiceA : "for(i<=5;i++)",
-        choiceB : "for(i=0;i<5;i++)",
+        choiceA : "for(i <= 5 ;i++)",
+        choiceB : "for(i=0 ;i<5 ;i++)",
         choiceC : "for i = 1 to 5",
-        choiceD : "for(i=0;i<=5)",
+        choiceD : "for( i = 0; i <= 5)",
         correct : "B"
     },{ // javascript 7
         question : "How can you add a comment in a JavaScript?",
@@ -243,7 +243,7 @@ let questions = [
         imgSrc : "img/js.png",
         choiceA : "ceil(x,y)",
         choiceB : "Math.ceil(x,y)",
-        choiceC : "Math.Max(x,y)",
+        choiceC : "Math.max(x,y)",
         choiceD : "top(x,y)",
         correct : "C"
     },{ // javascript 10
@@ -324,9 +324,9 @@ function renderCounter(){
     }else if(px > 120 && px  < 150 ){
         timeGauge.style.backgroundColor = "red"
         alertMsg.innerHTML =  'Hurry up!';
-    }else if(px == 150){
+    }else if(px === 150){
         timeGauge.style.backgroundColor = "red"
-        alertMsg.innerHTML =  'Time is Up!';
+        alertMsg.innerHTML =  'Ups! Time is Up!';
     }
     else{
         timeGauge.style.backgroundColor = "green"

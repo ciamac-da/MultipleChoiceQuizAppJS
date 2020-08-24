@@ -316,17 +316,18 @@ function renderCounter(){
             clearInterval(TIMER);
             scoreRender();
         }
+    }// This is how to change backgroundColor of timeGauge based on different "px"!
+    let px = parseInt(timeGauge.style.width)
+    if(px > 75 && px <= 120){
+        timeGauge.style.backgroundColor = "orange"
+    }else if(px > 120 && px  <= 150 ){
+        timeGauge.style.backgroundColor = "red"
+    }else{
+        timeGauge.style.backgroundColor = "green"
     }
 }
 
 
-if(timeGauge.style.width > "75px"){
-    timeGauge.style.backgroundColor = "yellow"
-}else if(timeGauge.style.width >= "120px"){
-    timeGauge.style.backgroundColor = "red"
-}else{
-    timeGauge.style.backgroundColor = "green"
-}
 
 
 // checkAnwer

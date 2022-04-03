@@ -270,7 +270,7 @@ let score = 0;
 // render a question
 function renderQuestion(){
     let q = questions[runningQuestion];
-    
+
     question.innerHTML = "<p>"+ q.question +"</p>";
     qImg.innerHTML = "<img src="+ q.imgSrc +">";
     choiceA.innerHTML = q.choiceA;
@@ -378,14 +378,14 @@ function scoreRender(){
 
     // calculate the amount of question percent answered by the user
     const scorePerCent = Math.round(100 * score/questions.length);
-    
+
     // choose the image based on the scorePerCent
     let img = (scorePerCent >= 80) ? "img/5.png" :
               (scorePerCent >= 60) ? "img/4.png" :
               (scorePerCent >= 40) ? "img/3.png" :
               (scorePerCent >= 20) ? "img/2.png" :
               "img/1.png";
-    
+
     // choose different texts based on the scorePerCent
     let PerCentMsg = (scorePerCent >= 80) ? "<p>Awesome!</p>" :
                      (scorePerCent >= 60) ? "<p>Bravo!</p>" :
